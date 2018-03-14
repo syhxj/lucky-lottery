@@ -134,8 +134,8 @@ function completedOnceRolling() {
             }
             current.consume = current.consume + consumeNumber;
             tasks[current.taskId].restUsers = restUsers;
-            tasks[current.taskId].lastRandUsers = [];
             tasks[current.taskId].consumeUsers.push(task.lastRandUsers);
+            tasks[current.taskId].lastRandUsers = [];            
             console.log('Lottery taskId ' + current.taskId + ' 余下:' + tasks[current.taskId].restUsers.toString());
             return true;
         }
